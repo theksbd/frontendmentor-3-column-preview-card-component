@@ -58,12 +58,22 @@ h3 {
     border-radius: 15px;
 }
 
+.item button:hover {
+    cursor: pointer;
+    background-color: hsl(0, 0%, 100%);
+}
+
 .item-1 {
     background-color: var(--bright-orange);
+    border-radius: 10px 0 0 10px;
 }
 
 .item-1 button {
     color: var(--bright-orange);
+}
+
+.item-1 button:hover {
+    color: hsl(32, 86%, 70%);
 }
 
 .item-2 {
@@ -74,15 +84,24 @@ h3 {
     color: var(--dark-cyan);
 }
 
+.item-2 button:hover {
+    color: hsl(184, 99%, 39%);
+}
+
 .item-3 {
     background-color: var(--very-dark-cyan);
+    border-radius: 0 10px 10px 0;
 }
 
 .item-3 button {
     color: var(--very-dark-cyan);
 }
 
-@media screen and (max-width: 800px){
+.item-3 button:hover {
+    color: hsl(179, 50%, 28%);
+}
+
+@media screen and (max-width: 800px) {
     .container {
         display: block;
     }
@@ -92,7 +111,7 @@ h3 {
     }
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 500px) {
     .item p {
         height: 200px;
     }
